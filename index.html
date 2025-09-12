@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Footprint Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💧 Water Footprint Calculator</h1>
+    <p>Understand how daily items and habits impact global water resources.</p>
+  </header>
+
+  <!-- 🌍 About Section -->
+  <section id="about">
+    <h2>About Water Footprints</h2>
+    <p>
+      The <strong>water footprint</strong> of a product or activity is the total volume of water used directly and indirectly to produce it. 
+      It is divided into three key components:
+    </p>
+    <ul>
+      <li><strong>🌊 Blue Water:</strong> Fresh surface and groundwater used for irrigation, livestock drinking water, and industrial processes.</li>
+      <li><strong>🌱 Green Water:</strong> Rainwater stored in the soil and absorbed by plants during growth (rain-fed agriculture).</li>
+      <li><strong>🏭 Grey Water:</strong> Water required to dilute pollutants (fertilizers, chemicals, waste) to safe levels.</li>
+    </ul>
+    <p>
+      Example: A cup of coffee (~200 L total) → 50 L Blue, 120 L Green, 30 L Grey.  
+      Knowing these categories helps us understand where water is being consumed or polluted, 
+      and how we can reduce our footprint through smarter choices.
+    </p>
+  </section>
+
+  <!-- 🌐 Calculator Section -->
+  <section id="calculator">
+    <h2>Check Water Footprint</h2>
+    <label for="itemSelect">Select an item:</label>
+    <select id="itemSelect"></select>
+    <button onclick="showFootprint()">Calculate</button>
+
+    <div id="result"></div>
+    <canvas id="chart" width="300" height="300"></canvas>
+  </section>
+  <footer>
+    <p>🌍 Built for Final Year Project | Sustainable Living Awareness</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
