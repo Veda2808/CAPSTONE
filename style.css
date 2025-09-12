@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f9ff;
+  color: #333;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.selector {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+select, button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+button {
+  background: #0096c7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #023e8a;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card h2 {
+  color: #0077b6;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* General body and header styling remains the same */
+
+#calculator {
+  max-width: 500px;        /* restrict width */
+  margin: 40px auto;       /* center horizontally with auto margins and add vertical spacing */
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  text-align: center;      /* center text, select, and button */
+}
+
+#calculator select, #calculator button {
+  width: 80%;              /* make dropdown and button same width */
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+canvas {
+  margin-top: 20px;
+}
