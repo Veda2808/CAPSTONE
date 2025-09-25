@@ -39,7 +39,6 @@ function showFootprint() {
     <p><b>Tip:</b> ${item.tip}</p>
   `;
 
-  // Show equivalents
   if (item.equivalents && item.equivalents.length > 0) {
     const eqList = document.createElement("ul");
     eqList.innerHTML = "<b>Equivalents:</b>";
@@ -51,7 +50,6 @@ function showFootprint() {
     card.appendChild(eqList);
   }
 
-  // Show reason
   if (item.reason) {
     const reasonP = document.createElement("p");
     reasonP.innerHTML = `<b>Why so high?</b> ${item.reason}`;
@@ -60,3 +58,20 @@ function showFootprint() {
 
   result.appendChild(card);
 }
+
+// Dark Mode Toggle
+document.getElementById("darkToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Animated Counter
+let count = 0;
+function animateCounter() {
+  const counter = document.getElementById("litersSaved");
+  if (count < 1200) { // Example value
+    count += 10;
+    counter.textContent = count;
+    setTimeout(animateCounter, 30);
+  }
+}
+animateCounter();
