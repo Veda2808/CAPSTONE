@@ -10,9 +10,12 @@
   <header>
     <h1>💧 Water Footprint Calculator</h1>
     <p>Understand how daily items and habits impact global water resources.</p>
+    <button id="darkToggle">🌙 Toggle Dark Mode</button>
+    
   </header>
 
   <!-- 🌍 About Section -->
+   <center>
   <section id="about">
     <h2>About Water Footprints</h2>
     <p>
@@ -30,22 +33,44 @@
       and how we can reduce our footprint through smarter choices.
     </p>
   </section>
+  </center>
 
   <!-- 🌐 Calculator Section -->
+   <center>
   <section id="calculator">
-    <h2>Check Water Footprint</h2>
-    <label for="itemSelect">Select an item:</label>
-    <select id="itemSelect"></select>
-    <button onclick="showFootprint()">Calculate</button>
+    <div class="calc-box">
+      <h2>Check Water Footprint</h2>
+      <label for="itemSelect">Select an item:</label>
+      <select id="itemSelect"></select>
+      <button onclick="showFootprint()">Calculate</button>
 
-    <div id="result"></div>
-    <canvas id="chart" width="300" height="300"></canvas>
+      <div id="result"></div>
+      <canvas id="chart" width="280" height="280"></canvas>
+    </div>
   </section>
-  <footer>
-    <p>🌍 Built for Final Year Project | Sustainable Living Awareness</p>
+  </center>
+
+ 
+
+  <footer class="footer">
+    <p>🌍 Built for Sustainable Living Awareness</p>
   </footer>
+
+  <!-- Chatbot Button -->
+  <div id="chatbot-btn" onclick="toggleChat()">💬</div>
+
+  <!-- Chatbot Window -->
+  <div id="chatbox">
+    <div id="chatHeader">WaterBot 💧 <span onclick="toggleChat()">✖</span></div>
+    <div id="chatBody"></div>
+    <div id="chatFooter">
+      <input type="text" id="chatInput" placeholder="Ask me about water footprint...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
-
+  <script src="chatbot.js"></script>
 </body>
 </html>
